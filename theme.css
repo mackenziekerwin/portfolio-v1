@@ -7,7 +7,7 @@
   scroll-behavior: smooth;
 }
 
-@media (min-width: 1025px) {
+@media (max-width: 1920px) {
   html {
     font-family: "Spectral", serif;
     font-size: 18px;
