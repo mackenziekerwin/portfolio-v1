@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MacKenzie Kerwin | About</title>
+  <link rel="stylesheet" type="text/css" href="theme.css">
+  <script src="https://d3js.org/d3.v5.js"></script>
+</head>
+
+<body>
+  <div id="container">
+    <div id="tabs">
+      <a>About</a>
+      <a href="index.html#work">Work</a>
+      <a href="MacKenzieKerwin.pdf" target="_blank">Resume</a>
+    </div>
+    <div id="about">
+      <div class="title">
+        <a href="index.html" id="arrow">←</a>
+      </div>
+      <div id="bio">
+        <div class="title">Oh, hello!</div>
+        <div>
+          I'm MacKenzie, a rising-third-year computer science and design student at Northeastern University. I'm
+          passionate about
+          software development, user experience, Boston, typography, and using too many exclamation points. I have
+          front-end
+          development experience and am always interested in learning new ways to create meaningful user experiences,
+          be
+          it
+          through data visualization, graphic design, or creative engineering.
+        </div>
+        <div id="currently"><span class="italic">Currently: </span>
+          Software Engineer Co-op at the Broad Institute of MIT and Harvard
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    d3.select("#about").transition()
+      .duration(500)
+      .ease(d3.easeLinear)
+      .style("opacity", 1);
+  </script>
+</body>
+
+</html>

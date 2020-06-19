@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 1280px) {
+  html {
+    font-family: "Spectral", serif;
+    font-size: 18px;
+  }
+
+  body {
+    background-color: #ffffff;
+  }
+
+  #container {
+    max-width: 1024px;
+    width: 80%;
+    margin: auto;
+  }
+
+  #greeting, .entry, .header {
+    color: #e71837;
+  }
+
+  a, a:hover, a:visited {
+    color: rgba(255, 255, 255, 0);
+    text-decoration: none;
+    -webkit-text-stroke: 1px #000000;
+  }
+
+  a:hover {
+    color: #000000;
+    cursor: pointer;
+  }
+
+  a, #name {
+    font-family: 'Rubik Mono One', sans-serif;
+  }
+
+  .italic {
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  #tabs {
+    padding: 24px 24px 12px 24px;
+    position: sticky;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    background-color: #ffffff;
+  }
+
+  #tabs > a, a#work {
+    margin: 16px;
+  }
+
+  #greeting {
+    text-align: center;
+    margin: auto;
+    padding: 25vh 0px;
+    border: 1px solid #e71837;
+  }
+
+  #name {
+    width: 612px;
+    height: 148px;
+    position: relative;
+    margin: auto;
+  }
+
+  .title {
+    font-size: 60px;
+  }
+
+  #mackenzie {
+    position: absolute;
+    left: 0;
+  }
+
+  #kerwin {
+    position: absolute;
+    right: 0;
+    top: 60px;
+  }
+
+  .outlined {
+    color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke: 1.5px #e71837;
+  }
+
+  #greeting, #about {
+    opacity: 0;
+  }
+
+  .title, .project, #about {
+    display: flex;
+  }
+
+  .header {
+    font-size: 36px;
+    margin: 24px 0px;
+  }
+
+  .project {
+    margin: 15vh 0px;
+  }
+
+  .description, #about > .title, #bio {
+    padding: 24px;
+  }
+
+  .description {
+    width: 50%;
+  }
+
+  #bio {
+    width: 48%;
+  }
+
+  #tabs, #project-1 > .description {
+    text-align: right;
+  }
+
+  .project > a {
+    display: contents;
+  }
+
+  .screenshot {
+    width: 65%;
+    border: 6px solid #e7e7e7;
+    border-radius: 6px;
+  }
+
+  .entry {
+    font-size: 24px;
+  }
+
+  .tags > span {
+    border-bottom: 1px solid #e71837;
+  }
+
+  .buttons, #currently {
+    margin: 1em 0px;
+  }
+
+  #arrow, #arrow:hover, #arrow:visited {
+    font-family: 'Spectral', serif;
+    color: #000000;
+    height: fit-content;
+  }
+
+  #arrow:hover {
+    color: #e71837;
+    -webkit-text-stroke: 1px #e71837;
+  }
+}
+
+@media (max-width: 1024px) {
+  #container {
+    max-width: 768px;
+  }
+
+  #about {
+    flex-direction: column;
+  }
+
+  #bio {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #container {
+    max-width: 688px;
+  }
+
+  html {
+    font-size: 16px;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+
+  #name {
+    width: 489px;
+    height: 120px;
+  }
+
+  #tabs, #work-container, .description, #project-1 > .description {
+    text-align: center;
+  }
+
+  #kerwin {
+    top: 48px;
+  }
+
+  .project {
+    flex-direction: column;
+  }
+
+  .description {
+    width: 100%;
+  }
+
+  .screenshot {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 620px) {
+  #container {
+    max-width: 480px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .header, .entry {
+    font-size: 22px;
+  }
+
+  #name {
+    width: 327px;
+    height: 70px;
+  }
+
+  #kerwin {
+    top: 28px;
+  }
+}
+
+
