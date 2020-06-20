@@ -1,16 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;1,300&display=swap");
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
+/*-----------------------------------------------------------------------*/
 @media (max-width: 1920px) {
   html {
     font-family: "Spectral", serif;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   body {
@@ -18,16 +20,20 @@
   }
 
   #container {
-    max-width: 1024px;
+    max-width: 1280px;
     width: 80%;
     margin: auto;
   }
 
-  #greeting, .entry, .header {
+  #greeting,
+  .entry,
+  .header {
     color: #e71837;
   }
 
-  a, a:hover, a:visited {
+  a,
+  a:hover,
+  a:visited {
     color: rgba(255, 255, 255, 0);
     text-decoration: none;
     -webkit-text-stroke: 1px #000000;
@@ -38,8 +44,9 @@
     cursor: pointer;
   }
 
-  a, #name {
-    font-family: 'Rubik Mono One', sans-serif;
+  a,
+  #name {
+    font-family: "Rubik Mono One", sans-serif;
   }
 
   .italic {
@@ -56,7 +63,8 @@
     background-color: #ffffff;
   }
 
-  #tabs > a, a#work {
+  #tabs > a,
+  a#work {
     margin: 16px;
   }
 
@@ -68,14 +76,14 @@
   }
 
   #name {
-    width: 612px;
-    height: 148px;
+    width: 735px;
+    height: 178px;
     position: relative;
     margin: auto;
   }
 
   .title {
-    font-size: 60px;
+    font-size: 72px;
   }
 
   #mackenzie {
@@ -86,7 +94,7 @@
   #kerwin {
     position: absolute;
     right: 0;
-    top: 60px;
+    top: 72px;
   }
 
   .outlined {
@@ -94,24 +102,29 @@
     -webkit-text-stroke: 1.5px #e71837;
   }
 
-  #greeting, #about {
+  #greeting,
+  #about {
     opacity: 0;
   }
 
-  .title, .project, #about {
+  .title,
+  .project,
+  #about {
     display: flex;
   }
 
   .header {
-    font-size: 36px;
-    margin: 24px 0px;
+    font-size: 48px;
+    margin: 36px 0px;
   }
 
   .project {
     margin: 15vh 0px;
   }
 
-  .description, #about > .title, #bio {
+  .description,
+  #about > .title,
+  #bio {
     padding: 24px;
   }
 
@@ -123,7 +136,8 @@
     width: 48%;
   }
 
-  #tabs, #project-1 > .description {
+  #tabs,
+  #project-1 > .description {
     text-align: right;
   }
 
@@ -138,19 +152,22 @@
   }
 
   .entry {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .tags > span {
     border-bottom: 1px solid #e71837;
   }
 
-  .buttons, #currently {
+  .buttons,
+  #currently {
     margin: 1em 0px;
   }
 
-  #arrow, #arrow:hover, #arrow:visited {
-    font-family: 'Spectral', serif;
+  #arrow,
+  #arrow:hover,
+  #arrow:visited {
+    font-family: "Spectral", serif;
     color: #000000;
     height: fit-content;
   }
@@ -161,6 +178,40 @@
   }
 }
 
+/*-----------------------------------------------------------------------*/
+@media (max-width: 1366px) {
+  #container {
+    max-width: 1280px;
+  }
+
+  html {
+    font-size: 18px;
+  }
+
+  .title {
+    font-size: 60px;
+  }
+
+  #name {
+    width: 612px;
+    height: 148px;
+  }
+
+  #kerwin {
+    top: 60px;
+  }
+
+  .entry {
+    font-size: 24px;
+  }
+
+  .header {
+    font-size: 36px;
+    margin: 24px 0px;
+  }
+}
+
+/*-----------------------------------------------------------------------*/
 @media (max-width: 1024px) {
   #container {
     max-width: 768px;
@@ -175,6 +226,7 @@
   }
 }
 
+/*-----------------------------------------------------------------------*/
 @media (max-width: 768px) {
   #container {
     max-width: 688px;
@@ -193,7 +245,10 @@
     height: 120px;
   }
 
-  #tabs, #work-container, .description, #project-1 > .description {
+  #tabs,
+  #work-container,
+  .description,
+  #project-1 > .description {
     text-align: center;
   }
 
@@ -215,6 +270,7 @@
   }
 }
 
+/*-----------------------------------------------------------------------*/
 @media (max-width: 620px) {
   #container {
     max-width: 480px;
@@ -224,12 +280,13 @@
     font-size: 28px;
   }
 
-  .header, .entry {
+  .header,
+  .entry {
     font-size: 22px;
   }
 
   #name {
-    width: 327px;
+    width: 286px;
     height: 70px;
   }
 
@@ -237,5 +294,3 @@
     top: 28px;
   }
 }
-
-
